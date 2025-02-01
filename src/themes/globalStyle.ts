@@ -8,11 +8,15 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+#root{
+  max-width:1280px;
+  margin: auto;
+}
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  
+  
   min-width: 320px;
   min-height: 100vh;
 
@@ -24,6 +28,9 @@ body {
   color: ${(props)=>props.theme.color.textColor};
   background-color: ${(props)=>props.theme.color.bgc};
 
+  section{
+    margin-top: 20px;
+  }
 }
 
 

@@ -13,6 +13,8 @@ flex-direction:column;
 align-items:center;
 box-shadow: ${(props)=>props.theme.color.darkGray};
 
+margin:200px auto ;
+box-shadow: 10px 10px 10px ${(props)=>props.theme.color.gray};
 
 h1 {
   font-size: 3.2em;
@@ -37,45 +39,12 @@ a:hover {
   width:300px;
 
   border-bottom: 1px solid ${(props)=>props.theme.color.darkGray};
-}
-.input_wrapper{
-  margin:20px auto;
-
-  width:100%;
-  height:40px;
-  padding: 15px;
-  outline:none;
-
-  border-radius: 8px;
-  background-color:${(props)=>props.theme.color.lightGray};
-
-  color:${(props)=>props.theme.color.textColor};
   
 }
 
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 
-  margin:30px 0;
-  
 
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 .reg_wrapper{
   margin: 30px;
