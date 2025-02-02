@@ -27,3 +27,32 @@ export const SAppButton = styled.button`
   outline: 4px auto -webkit-focus-ring-color;
 }
 `
+
+export const SMainButton = styled.button`
+
+    width:150px;
+    height: 40px;
+    border-radius:8px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    box-shadow:  3px 3px 3px dimgray;
+
+    background-color:${props => props.theme.color.primeColor};
+    color: ${props => props.theme.color.hoverText};
+
+     &:hover{
+      border:0.5px solid ${props => props.theme.color.blue};
+      
+    }
+    
+    transform: scale(1);
+    transition: transform 0.1s ease;
+
+    &:active {
+    
+    transition: transform 0.1s ease;
+    box-shadow: inset  3px 3px 3px dimgray;
+  }
+  
+`

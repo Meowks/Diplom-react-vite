@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const SLoginPage = styled.div`
 
 width:500px;
-height:500px;
+
 border: 1px solid ;
 border-radius: 10px;
 background-color: ${(props)=>props.theme.color.hoverText};
@@ -13,6 +13,7 @@ flex-direction:column;
 align-items:center;
 box-shadow: ${(props)=>props.theme.color.darkGray};
 
+padding: 15px;
 margin:200px auto ;
 box-shadow: 10px 10px 10px ${(props)=>props.theme.color.gray};
 
@@ -28,6 +29,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
+  font-weight: 700;
   color: #535bf2;
 }
 
@@ -38,13 +40,17 @@ a:hover {
   justify-content:center;
   width:300px;
 
-  border-bottom: 1px solid ${(props)=>props.theme.color.darkGray};
+  border-bottom: 0.5px solid ${(props)=>props.theme.color.darkGray};
+  padding-bottom: 30px;
   
+  button{
+    
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
-
-
-
+  
 
 .reg_wrapper{
   margin: 30px;

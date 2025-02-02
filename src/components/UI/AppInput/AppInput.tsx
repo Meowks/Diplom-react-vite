@@ -5,7 +5,7 @@ import { SAppInput, SErrorText } from "./AppInput.style";
 
 type IAppInputProps = {
   inputClassName:string;
-  inputType:"text" | "password" | "email";
+  inputType:"text" | "password" | "email" | "search";
   inputPlaceholder:string;
   inputValue?:string;
   onChange?:(event: React.ChangeEvent<HTMLInputElement>)=>void;

@@ -1,22 +1,28 @@
-import { SAppButton } from "./AppButton.style";
+import { SMainButton } from "./AppButton.style";
 
 interface IAppButtonProps {
-  buttonType:"button" | "submit";
-  buttonClassName:string;
-  buttonText:string;
-  onChange?:()=>void;
-  isDisabled:boolean;
+  buttonType: "button" | "submit";
+  buttonClassName: string;
+  buttonText: string;
+  onClick?: () => void;
+  isDisabled: boolean;
 }
 
-export const AppButton = ({buttonType, buttonClassName, buttonText, onChange, isDisabled}: IAppButtonProps) => {
+export const AppButton = ({
+  buttonType,
+  buttonClassName,
+  buttonText,
+  onClick,
+  isDisabled
+}: IAppButtonProps) => {
   return (
-    <SAppButton 
-    type={buttonType} 
-    className={buttonClassName}
-    onClick={()=>onChange}
-    disabled={isDisabled}
+    <SMainButton
+      type={buttonType}
+      className={buttonClassName}
+      onClick={onClick}
+      disabled={isDisabled}
     >
       {buttonText}
-      </SAppButton>
+    </SMainButton>
   );
 };

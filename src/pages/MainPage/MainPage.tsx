@@ -5,8 +5,12 @@ import { Title } from "../../components/UI/Title/Title";
 
 import { SMainPage } from "./MainPage.style";
 import { Header } from "../../components/Header/Header";
+import { useContext } from "react";
+import { AppContext } from "../../components/Context/Context";
 
 export const MainPage = () => {
+  const {selectedItem} = useContext(AppContext);
+  
   return (
     <>
       <Header/>
@@ -16,6 +20,9 @@ export const MainPage = () => {
       <Title mainText="⚽ Главная страница"></Title>
       <MatchesSection />
       <LeaguesSection />
+
+      
+      
     </SMainPage>
     </>
   );

@@ -1,4 +1,3 @@
 
-export const baseUrlAuth = ""
+export const baseUrl = "https://api.football-data.org/v4"
 
-export const baseUrlFB = ""
