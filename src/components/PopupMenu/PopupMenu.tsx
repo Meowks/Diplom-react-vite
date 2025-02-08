@@ -12,7 +12,6 @@ export const PopupMenu = ({}: IPopupMenuProps) => {
         <li className="popup_item"><a href="#">Матчи</a></li>
         <li className="popup_item"><a href="#">Команды</a></li>
         <li className="popup_item"><a href="#">Игроки</a></li>
-        <li className="popup_item"><a href="#">Турниры</a></li>
         <li className="popup_item"><a href="#">Турнирные таблицы</a></li>
       </ul>
     </SPopupMenu>

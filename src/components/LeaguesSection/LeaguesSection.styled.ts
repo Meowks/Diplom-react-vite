@@ -1,15 +1,33 @@
 import styled from "styled-components"
 
 
-export const SLeagueList =styled.ul`
-list-style: none;
-padding: 0;
-
-  li{
-    background: #3498db;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+export const SLeagueSection = styled.section`
+  margin:0;
+  font-size:20px;
+  .ligue_data{
+    display: flex;
+    gap:20px;
+    
   }
+  .ligue,
+  .ligue_seasons{
+    background-color: ${props => props.theme.color.elemCont};
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .ligue{
+    width:1fr;
+  }
+  .ligue_seasons{
+    width:2fr
+  }
+  .emblemLigue{
+    margin: 20px;
+    width: 200px
+  }
+  .flagLigue{
+    margin: 0 20px;
+    width: 150px
+  }
+
 `

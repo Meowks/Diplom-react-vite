@@ -1,8 +1,8 @@
 import { createContext, useState, ReactNode, Dispatch, SetStateAction } from "react";
 
 interface IAppContext {
-  selectedItem: string | null;
-  setSelectedItem: Dispatch<SetStateAction<string | null>>;
+  selectedItem: { ligue: string; key: string } | null;
+  setSelectedItem: Dispatch<SetStateAction<{ ligue: string; key: string } | null>>;
 }
 
 interface IAppProviderProps {
@@ -15,7 +15,8 @@ export const AppContext = createContext<IAppContext>({
 });
 
 export function AppProvider({ children }: IAppProviderProps) {
-  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<{ ligue: string; key: string } | null>(null);
+  
 
   return (
     <AppContext.Provider value={{ selectedItem, setSelectedItem }}>

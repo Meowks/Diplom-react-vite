@@ -16,7 +16,7 @@ export const LigueMenu = ({ }: IPopupMenuProps) => {
     <SPopupMenu>
       <ul className="popup_list">
         {dataLigue.map((elem, index) => (
-          <li key={index + 1} className="popup_item" onClick={()=>setSelectedItem(elem.ligue)}><a href={elem.key}>{elem.ligue}</a></li>
+          <li key={index + 1} className="popup_item" onClick={()=>setSelectedItem(elem)}>{elem.ligue}</li>
         ))}
       </ul>
     </SPopupMenu>

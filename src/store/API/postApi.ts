@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { baseUrl } from "../../Utils/baseUrl";
+
 
 interface ISeasonWinner {
   id: number,
@@ -51,17 +51,21 @@ interface IGetLigue {
 
 export const postApi = createApi({
   reducerPath: "postApi",
-  baseQuery: fetchBaseQuery({ 
-    baseUrl: baseUrl,
+  baseQuery: fetchBaseQuery({
+    baseUrl: "/api",
     prepareHeaders: (headers) => {
       headers.set("X-Auth-Token", "7150ef761a0f463389f3cdd826014de3");
       return headers;
-    } }),
+    }
+  }),
   endpoints: (builder) => ({
     getLigue: builder.query<IGetLigue, string>({
       query: (ligue) => `/competitions/${ligue}`
+    }),
+    getMatches: builder.query<any, string>({
+      query: (ligue) => `/competitions/${ligue}/matches`
     })
   })
 })
 
-export const {useLazyGetLigueQuery} = postApi;
+export const { useGetLigueQuery, useGetMatchesQuery } = postApi;

@@ -49,7 +49,7 @@ export const Header = ({ }: IHeaderProps) => {
 
           <AppButton
             buttonClassName="buttonMenu"
-            buttonText="Лиги"
+            buttonText="Турниры"
             buttonType="button"
             onClick={toggleLigueMenu}
             isDisabled={false} />
