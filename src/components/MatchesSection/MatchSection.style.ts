@@ -32,7 +32,7 @@ padding: 20px;
     width:50%;
     box-shadow:7px 7px 7px gray;
     
-    button{
+    .favBtn{
       font-size:20px;
       padding:5px;
       border-radius:8px;
@@ -45,7 +45,7 @@ padding: 20px;
       &:hover{
         box-shadow:2px 2px 2px gray;
       }
-      &:active{
+      &.active{
         background-color: green;
         box-shadow:3px 3px 3px darkgreen;
       }

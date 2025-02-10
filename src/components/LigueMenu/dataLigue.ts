@@ -30,3 +30,18 @@ export const dataLigue = [
     key: "PL"
   },
 ]
+
+export const dataMenu = [
+  {
+    elemMenu: "Матчи"
+  },
+  {
+    elemMenu: "Команды"
+  },
+  {
+    elemMenu: "Игроки"
+  },
+  {
+    elemMenu: "Турнирные таблицы"
+  },
+]

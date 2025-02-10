@@ -6,6 +6,7 @@ import { SHeader } from "./Header.styled";
 import { PopupMenu } from "../PopupMenu/PopupMenu";
 import { LigueMenu } from "../LigueMenu/LigueMenu";
 import { AppContext } from "../Context/Context";
+import { useNavigate } from "react-router-dom";
 
 interface IHeaderProps {
 
@@ -14,6 +15,8 @@ interface IHeaderProps {
 export const Header = ({ }: IHeaderProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isOpenLigue, setIsOpenLigue] = useState(false)
+
+  const navigate = useNavigate()
 
  
 
@@ -45,13 +48,21 @@ export const Header = ({ }: IHeaderProps) => {
             buttonText="Меню"
             buttonType="button"
             onClick={toggleMenu}
-            isDisabled={false} />
+            isDisabled={false} 
+            
+            />
 
           <AppButton
             buttonClassName="buttonMenu"
             buttonText="Турниры"
             buttonType="button"
             onClick={toggleLigueMenu}
+            isDisabled={false} />
+          <AppButton
+            buttonClassName="favBtn"
+            buttonText="Избранное"
+            buttonType="button"
+            onClick={()=>navigate("/fav-page")}
             isDisabled={false} />
         </div>
 

@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { LoginPage } from './pages/loginPage/LoginPage'
 import { RegisterPage } from './pages/RegisterPage/RegisterPage'
 import { MainPage } from './pages/MainPage/MainPage'
-import { FavoritePage } from './pages/FavoritPage/FavoritePage'
+import { FavoritesPage } from './pages/FavoritPage/FavoritePage'
 import { CardPage } from './pages/CardPage/CardPage'
 import { AppProvider } from './components/Context/Context'
 
@@ -24,7 +24,7 @@ function App() {
     },
     {
       path: "/fav-page",
-      element: <FavoritePage />,
+      element: <FavoritesPage />,
     },
     {
       path: "/card-page",

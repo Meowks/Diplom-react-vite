@@ -6,6 +6,7 @@ interface IAppButtonProps {
   buttonText: string;
   onClick?: () => void;
   isDisabled: boolean;
+  
 }
 
 export const AppButton = ({
